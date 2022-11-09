@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<title>web page</title>
+<body>
+<p>
+<a href="#client">Introduction to web: client\server cocepts</a><br>
+<a href="#webapp">Components of web applications</a><br>
+
+<br>
+</p>
+<!--Client Server Model-->
+<h2 style="font-size:30px ; text-align:center;">
+<div id="client">
+<strong><u>Client server model</u><br></strong>
+</h2>
+<p>
+Web server is a computer where the web content is stored. Basically web server is used to host the web sites but there exists other web servers also such as gaming, storage, FTP, email etc.
+
+    Web site is collection of web pages whileweb server is a software that respond to the request for web resources.
+
+he Client-server model is a distributed application structure that partitions task or workload between the providers of a resource or service, called servers, and service requesters called clients. In the client-server architecture, when the client computer sends a request for data to the server through the internet, the server accepts the requested process and deliver the data packets requested back to the client. Clients do not share any of their resources. Examples of Client-Server Model are Email, World Wide Web, etc.
+
+How the Client-Server Model works ?
+In this article we are going to take a dive into the Client-Server model and have a look at how the Internet works via, web browsers. This article will help us in having a solid foundation of the WEB and help in working with WEB technologies with ease.
+
+    Client: When we talk the word Client, it mean to talk of a person or an organization using a particular service. Similarly in the digital world a Client is a computer (Host) i.e. capable of receiving information or using a particular service from the service providers (Servers).
+    Servers: Similarly, when we talk the word Servers, It mean a person or medium that serves something. Similarly in this digital world a Server is a remote computer which provides information (data) or access to particular services.
+
+So, its basically the Client requesting something and the Server serving it as long as its present in the database.
+
+How the browser interacts with the servers ?
+There are few steps to follow to interacts with the servers a client.
+
+    User enters the URL(Uniform Resource Locator) of the website or file. The Browser then requests the DNS(DOMAIN NAME SYSTEM) Server.
+    DNS Server lookup for the address of the WEB Server.
+    DNS Server responds with the IP address of the WEB Server.
+    Browser sends over an HTTP/HTTPS request to WEB Server’s IP (provided by DNS server).
+    Server sends over the necessary files of the website.
+    Browser then renders the files and the website is displayed. This rendering is done with the help of DOM (Document Object Model) interpreter, CSS interpreter and JS Engine collectively known as the JIT or (Just in Time) Compilers.
+Advantages of Client-Server model:
+
+    Centralized system with all data in a single place.
+    Cost efficient requires less maintenance cost and Data recovery is possible.
+    The capacity of the Client and Servers can be changed separately.
+
+Disadvantages of Client-Server model:
+
+    Clients are prone to viruses, Trojans and worms if present in the Server or uploaded into the Server.
+    Server are prone to Denial of Service (DOS) attacks.
+    Data packets may be spoofed or modified during transmission.
+    Phishing or capturing login credentials or other useful information of the user are common and MITM(Man in the Middle) attacks are common.
+The Client-server model is a distributed application structure that partitions task or workload between the providers of a resource or service, called servers, and service requesters called clients. In the client-server architecture, when the client computer sends a request for data to the server through the internet, the server accepts the requested process and deliver the data packets requested back to the client. Clients do not share any of their resources. Examples of Client-Server Model are Email, World Wide Web, etc.
+
+How the Client-Server Model works ?
+In this article we are going to take a dive into the Client-Server model and have a look at how the Internet works via, web browsers. This article will help us in having a solid foundation of the WEB and help in working with WEB technologies with ease.
+
+   What is client server architecture?
+
+Before we explain client server architecture and you start reading words such as servers, service, network, data, and files, and start feeling overwhelmed with jargon, let us first understand about this architecture in layperson’s terms.
+
+The notion of client-server architecture can be understood by the analogy of ordering a pizza for delivery. You call the store to order a pizza and someone picks up the call, takes your order, and then delivers it. Simple, right? Yes, this analogy pretty much answers the fundamental principle of client server architecture.
+
+Simply put, two factors are involved :
+
+    A server is the one who provides requested services.
+    Clients are the ones who request services.
+
+Client and server communication
+
+Generally, a service is an abstraction of computer resources and a client does not have to be concerned with how the server performs while fulfilling the request and delivering the response. The client only has to understand the response based on the well-known application protocol, i.e. the content and the formatting of the data for the requested service.
+
+Clients and servers exchange messages in a request–response messaging pattern. The client sends a request, and the server returns a response. This exchange of messages is an example of inter-process communication. To communicate, the computers must have a common language, and they must follow rules so that both the client and the server know what to expect. The language and rules of communication are defined in a communications protocol. All protocols operate in the application layer. The application layer protocol defines the basic patterns of the dialogue. To formalize the data exchange even further, the server may implement an application programming interface (API).[3] The API is an abstraction layer for accessing a service. By restricting communication to a specific content format, it facilitates parsing. By abstracting access, it facilitates cross-platform data exchange.[4]
+
+A server may receive requests from many distinct clients in a short period. A computer can only perform a limited number of tasks at any moment, and relies on a scheduling system to prioritize incoming requests from clients to accommodate them. To prevent abuse and maximize availability, the server software may limit the availability to clients. Denial of service attacks are designed to exploit a server's obligation to process requests by overloading it with excessive request rates. Encryption should be applied if sensitive information is to be communicated between the client and the server.
+Example
+
+When a bank customer accesses online banking services with a web browser (the client), the client initiates a request to the bank's web server. The customer's login credentials may be stored in a database, and the webserver accesses the database server as a client. An application server interprets the returned data by applying the bank's business logic and provides the output to the webserver. Finally, the webserver returns the result to the client web browser for display.
+
+In each step of this sequence of client-server message exchanges, a computer processes a request and returns data. This is the request-response messaging pattern. When all the requests are met, the sequence is complete and the web browser presents the data to the customer.
+
+This example illustrates a design pattern applicable to the client–server model: separation of concerns.
+Early history
+
+An early form of client-server architecture is remote job entry, dating at least to OS/360 (announced 1964), where the request was to run a job, and the response was the output.
+
+While formulating the client–server model in the 1960s and 1970s, computer scientists building ARPANET (at the Stanford Research Institute) used the terms server-host (or serving host) and user-host (or using-host), and these appear in the early documents RFC 5[5] and RFC 4.[6] This usage was continued at Xerox PARC in the mid-1970s.
+
+One context in which researchers used these terms was in the design of a computer network programming language called Decode-Encode Language (DEL).[5] The purpose of this language was to accept commands from one computer (the user-host), which would return status reports to the user as it encoded the commands in network packets. Another DEL-capable computer, the server-host, received the packets, decoded them, and returned formatted data to the user-host. A DEL program on the user-host received the results to present to the user. This is a client-server transaction. Development of DEL was just beginning in 1969, the year that the United States Department of Defense established ARPANET (predecessor of Internet).
+
+
+
+
+</p>
+<img src="https://www.tutorialspoint.com/internet_technologies/images/internet-web_server_working.jpg ">
+
+<!--Web Based Apps-->
+<h2 style="font-size:30px ; text-align:center;">
+<div id="webapp">
+<strong><u>Components of web based applicatons</u><br></strong>
+</h2>
+<p>
+<strong>Domain main system</strong><br>
+The domain name system (DNS) is a naming database in which internet domain names are located and translated into Internet Protocol (IP) addresses. The domain name system maps the name people use to locate a website to the IP address that a computer uses to locate that website.
+
+
+<strong>Networkload balancer</strong><br>
+A Network Load Balancer functions at the fourth layer of the Open Systems Interconnection (OSI) model. It can handle millions of requests per second. After the load balancer receives a connection request, it selects a target from the target group for the default rule. It attempts to open a TCP connection to the selected target on the port specified in the listener configuration.
+
+When you enable an Availability Zone for the load balancer, Elastic Load Balancing creates a load balancer node in the Availability Zone. By default, each load balancer node distributes traffic across the registered targets in its Availability Zone only. If you enable cross-zone load balancing, each load balancer node distributes traffic across the registered targets in all enabled Availability Zones. For more information, see Availability Zones.
+
+To increase the fault tolerance of your applications, you can enable multiple Availability Zones for your load balancer and ensure that each target group has at least one target in each enabled Availability Zone. For example, if one or more target groups does not have a healthy target in an Availability Zone, we remove the IP address for the corresponding subnet from DNS, but the load balancer nodes in the other Availability Zones are still available to route traffic. If a client doesn't honor the time-to-live (TTL) and sends requests to the IP address after it is removed from DNS, the requests fail.
+
+For TCP traffic, the load balancer selects a target using a flow hash algorithm based on the protocol, source IP address, source port, destination IP address, destination port, and TCP sequence number. The TCP connections from a client have different source ports and sequence numbers, and can be routed to different targets. Each individual TCP connection is routed to a single target for the life of the connection.
+
+For UDP traffic, the load balancer selects a target using a flow hash algorithm based on the protocol, source IP address, source port, destination IP address, and destination port. A UDP flow has the same source and destination, so it is consistently routed to a single target throughout its lifetime. Different UDP flows have different source IP addresses and ports, so they can be routed to different targets.
+
+Elastic Load Balancing creates a network interface for each Availability Zone you enable. Each load balancer node in the Availability Zone uses this network interface to get a static IP address. When you create an Internet-facing load balancer, you can optionally associate one Elastic IP address per subnet.
+
+When you create a target group, you specify its target type, which determines how you register targets. For example, you can register instance IDs, IP addresses, or an Application Load Balancer. If you register targets by instance ID, the source IP addresses of the clients are preserved and provided to your applications. If you register targets by IP address, the source IP addresses are the private IP addresses of the load balancer nodes. If you register an Application Load Balancer as a target, the source IP addresses of the clients are preserved and provided to your applications. For more information, see Client IP preservation.
+
+You can add and remove targets from your load balancer as your needs change, without disrupting the overall flow of requests to your application. Elastic Load Balancing scales your load balancer as traffic to your application changes over time. Elastic Load Balancing can scale to the vast majority of workloads automatically.
+
+You can configure health checks, which are used to monitor the health of the registered targets so that the load balancer can send requests only to the healthy targets.
+
+For more information, see How Elastic Load Balancing works in the Elastic Load Balancing User Guide.
+
+
+<strong>Web app Servers</strong><br>
+Office Web Apps Server is an Office server product that provides browser-based file viewing and editing services for Office files. Office Web Apps Server works with products and services that support WOPI, the Web app Open Platform Interface protocol. These products, known as hosts, include SharePoint 2013 and Lync Server 2013. An Office Web Apps Server farm can provide Office services to multiple on-premises hosts, and you can scale out the farm from one server to multiple servers as your organization’s needs grow. Although Office Web Apps Server requires dedicated servers that run no other server applications, you can install Office Web Apps Server on virtual machine instances instead.
+
+It is easier to deploy and manage Office Web Apps within your organization now that it is a stand-alone product. If you deploy SharePoint 2013, for example, you no longer have to optimize the SharePoint infrastructure to support Office Web Apps, which in earlier versions was tightly integrated with SharePoint Server 2010. You can also apply updates to the Office Web Apps Server farm separately and at a different frequency than you update SharePoint or Lync Server. Having a stand-alone Office Web Apps Server farm also means that users can view or edit Office files that are stored outside 
+</p>
+<img src="https://static.javatpoint.com/blog/images/web-application.png">
+
+
+
+
+
+
+
+
+
+
+
